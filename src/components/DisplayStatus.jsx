@@ -6,7 +6,6 @@ function DisplayStatus(props) {
     const { status, getPercent } = props
     const [textColor, settextColor] = useState('neutral-1')
     useEffect(() => {
-        console.log(status);
         switch (status) {
             case STATUS.STARTED:
                 settextColor('status-ok')
