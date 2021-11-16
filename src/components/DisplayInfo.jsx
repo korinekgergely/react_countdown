@@ -11,7 +11,7 @@ function DisplayInfo(props) {
                     <Heading margin="none" level="3" textAlign="center">Time remaining</Heading></CardHeader>
                 <CardBody pad="medium">
                     <Text color="neutral-1" size="large" textAlign="center">{twoDigits(hoursToDisplay)}:{twoDigits(minutesToDisplay)}:
-                        {twoDigits(secondsToDisplay)}</Text>
+                        {twoDigits(secondsToDisplay.toFixed(1))}</Text>
                 </CardBody>
             </Card>
             <Card height="small" width="small" background="light-1">

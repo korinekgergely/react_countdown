@@ -99,14 +99,14 @@ function Counter() {
     useInterval(
         () => {
             if (secondsRemaining > 0) {
-                setSecondsRemaining(secondsRemaining - 1);
-                setSecondsElapsed(secondsElapsed + 1);
+                setSecondsRemaining(secondsRemaining - .1);
+                setSecondsElapsed(secondsElapsed + .1);
             } else {
                 setStatus(STATUS.STOPPED);
                 secondsAll = null
             }
         },
-        status === STATUS.STARTED ? 1000 : null
+        status === STATUS.STARTED ? 100 : null
         // passing null stops the interval
     );
 
